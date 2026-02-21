@@ -24,7 +24,7 @@ const Hero = () => {
 
         <div className="flex flex-wrap gap-4 justify-center mt-6">
           <a
-            href="https://wa.me/628123456789?text=Halo%2C%20saya%20ingin%20konsultasi%20proyek."
+            href="https://wa.me/6287825327175?text=Halo%2C%20saya%20ingin%20konsultasi%20proyek."
             className="flex min-w-40 items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-base font-bold shadow-xl shadow-primary/30"
           >
             Mulai Proyek Anda
