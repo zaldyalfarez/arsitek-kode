@@ -3,7 +3,7 @@ import { servicesData } from "../assets/data/servicesData";
 const Services = () => {
   return (
     <>
-      <section className="bg-white" id="layanan">
+      <section className="bg-white px-4 sm:px-6 lg:px-10" id="layanan">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
             Layanan Spesialis Kami
@@ -14,7 +14,7 @@ const Services = () => {
             untuk membantu bisnis Anda.
           </p>
         </div>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+        <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {servicesData.map((service, index) => (
               <div

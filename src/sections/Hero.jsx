@@ -12,8 +12,16 @@ const Hero = () => {
         </span>
 
         <h1 className="text-4xl md:text-6xl font-black leading-[1.2] tracking-tight">
-          Menciptakan <span className="text-gray-400">Sistem Web</span> <br />
-          Efisien dan juga Berkualitas
+          <span className="block lg:hidden">
+            Menciptakan <br /> <span className="text-gray-400">Sistem Web</span>{" "}
+            <br />
+            Efisien dan juga Berkualitas
+          </span>
+
+          <span className="hidden lg:block">
+            Menciptakan <span className="text-gray-400">Sistem Web</span> <br />
+            Efisien dan juga Berkualitas
+          </span>
         </h1>
 
         <p className="text-lg md:text-xl text-[#616889] max-w-2xl leading-relaxed mx-auto">
