@@ -183,6 +183,7 @@ const ProjectDetail = () => {
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <a
                 href="https://wa.me/628123456789?text=Halo%2C%20saya%20ingin%20konsultasi%20proyek."
+                target="_blank"
                 className="flex cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-white text-primary text-lg font-bold transition-all shadow-lg hover:bg-opacity-90"
               >
                 Mulai Proyek Anda
