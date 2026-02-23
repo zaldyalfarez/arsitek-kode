@@ -1,10 +1,15 @@
 import { useParams, Navigate } from "react-router-dom";
 import { projectsData } from "../assets/data/projectsData";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const ProjectDetail = () => {
   const { slug } = useParams();
   const project = projectsData.find((p) => p.slug === slug);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, []);
 
   if (!project) {
     return <Navigate to="/" replace />;
@@ -29,9 +34,13 @@ const ProjectDetail = () => {
                 {project.heroDescription}
               </p>
               <div className="flex gap-4">
-                <button className="flex min-w-40 cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold transition-all shadow-lg hover:translate-y-0.5">
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  className="flex min-w-40 cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold transition-all shadow-lg hover:translate-y-0.5"
+                >
                   Lihat Demo Langsung
-                </button>
+                </a>
               </div>
             </div>
 
