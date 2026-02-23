@@ -18,7 +18,7 @@ const ProjectDetail = () => {
   return (
     <div className="bg-background-light text-[#111218] transition-colors duration-200">
       <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
-        <section className="max-w-7xl mx-auto w-full px-6 md:px-10 py-12 md:py-20">
+        <section className="max-w-7xl mx-auto w-full px-6 md:px-10 py-12 md:py-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="flex flex-col gap-8">
               <div className="w-fit inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest">

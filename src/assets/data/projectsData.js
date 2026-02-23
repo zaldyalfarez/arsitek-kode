@@ -60,7 +60,7 @@ export const projectsData = [
   {
     id: 2,
     slug: "masterplan-academy",
-    title: "Masterplan Academy - Platform Kelas Online Apotek",
+    title: "Masterplan Academy Platform Kelas Online Apotek",
     category: "E-Learning Platform",
     description:
       "Masterplan Academy adalah platform kelas online untuk pembelajaran seputar apotek, mulai dari pemenuhan syarat izin apotek hingga dokumen administrasi perusahaan apotek, memudahkan akses pembelajaran dari rumah secara efisien.",
