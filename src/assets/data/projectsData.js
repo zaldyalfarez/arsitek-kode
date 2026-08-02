@@ -1,9 +1,80 @@
 import { HeiwaImages } from "../picture/heiwa";
 import { MasterplanImages } from "../picture/masterplan";
+import { EduactImages } from "../picture/eduact";
 
 export const projectsData = [
   {
     id: 1,
+    slug: "eduact",
+    title: "Eduact - Platform Manajemen Event & Pembelajaran Edukasi",
+    category: "E-Learning & Event Management Platform",
+    description:
+      "Eduact adalah platform pendidikan dan manajemen program terpadu yang dirancang untuk mengelola kelas online, kompetisi, pendaftaran peserta, pembayaran online, pengumpulan berkas submission, forum diskusi, hingga penerbitan sertifikat digital secara efisien.",
+    heroDescription:
+      "Platform ekosistem edukasi modern yang memudahkan peserta mendaftar event & program pembelajaran, mengunggah tugas, membayar via payment gateway terintegrasi, serta membantu admin mengelola operasional secara real-time.",
+    thumbnail: EduactImages.Thumbnail,
+    heroImage: EduactImages.Hero,
+    stats: {
+      industri: "Pendidikan / E-Learning",
+      waktu: "3 Bulan",
+      teknologi: "React, Node.js, Express, PostgreSQL",
+      ukuranTim: "2 Orang",
+    },
+    challenge: {
+      title: "Manajemen Program Edukasi & Pengelolaan Event Terfragmentasi",
+      description:
+        "Sebelum hadirnya Eduact, alur pendaftaran peserta, verifikasi dokumen submission, pelacakan pembayaran, dan penyebaran materi dilakukan secara terpisah dan manual. Hal ini memicu inefisiensi operasional panitia serta membuat alur belajar peserta kurang terstruktur.",
+      painPoints: [
+        "Proses registrasi dan pengumpulan berkas tugas/submission peserta dilakukan manual sehingga memakan waktu lama.",
+        "Sistem pembayaran event belum terintegrasi otomatis, memerlukan konfirmasi dan verifikasi manual.",
+        "Tidak adanya portal terpusat bagi peserta untuk memantau progres tahapan program, pengumuman, dan mengunduh sertifikat.",
+      ],
+    },
+    solution: {
+      title: "Platform Workspace Terintegrasi untuk Pembelajaran dan Operasional Event",
+      description:
+        "Kami membangun Eduact sebagai Single Page Application (SPA) responsif yang menghubungkan peserta, admin, dan mentor dalam satu ekosistem workspace. Frontend dikembangkan dengan React, TypeScript, Vite, dan Tailwind CSS untuk performa UI dashboard yang cepat dan nyaman. Backend menggunakan Node.js (Express) dengan database PostgreSQL dan Sequelize ORM, didukung antrean latar belakang BullMQ/Redis serta integrasi payment gateway Midtrans untuk transaksi otomatis.",
+      features: [
+        {
+          title: "Manajemen Program & Stage Management",
+          description:
+            "Memungkinkan admin mengelola alur program, tahapan seleksi (stage), modul materi, forum diskusi, serta pengumuman secara real-time.",
+        },
+        {
+          title: "Sistem Submission & Penerbitan Sertifikat",
+          description:
+            "Peserta dapat mengunggah berkas submission tugas, diikuti proses peninjauan oleh mentor/admin dan penerbitan sertifikat digital berbasis template secara otomatis.",
+        },
+        {
+          title: "Integrasi Payment Gateway & RBAC",
+          description:
+            "Mendukung pendaftaran dan transaksi kelas/event secara langsung dengan payment gateway Midtrans serta pengaturan hak akses berbasis peran (RBAC).",
+        },
+      ],
+    },
+    gallery: [EduactImages.gallery[0], EduactImages.gallery[1]],
+    impact: [
+      { title: "Efisiensi Operasional Program", value: 95 },
+      { title: "Kemudahan Akses & Registrasi", value: 100 },
+      { title: "Otomatisasi Verifikasi & Sertifikat", value: 90 },
+    ],
+    techs: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Sequelize",
+      "Midtrans",
+      "Redis / BullMQ",
+    ],
+    featured: true,
+    demo: "https://eduact.arsitek-kode.com/",
+  },
+
+  {
+    id: 2,
     slug: "widyatama-heiwa-program",
     title: "Portal Berita Widyatama Heiwa Program",
     category: "Content Management System",
@@ -58,7 +129,7 @@ export const projectsData = [
   },
 
   {
-    id: 2,
+    id: 3,
     slug: "masterplan-academy",
     title: "Masterplan Academy Platform Kelas Online Apotek",
     category: "E-Learning Platform",
